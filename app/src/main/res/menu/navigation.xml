@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_history"
+        android:icon="@drawable/notebook"
+        android:title="History" />
+    <item
+        android:id="@+id/menu_exercise"
+        android:icon="@drawable/dumbell"
+        android:title="Exercise" />
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/user"
+        android:title="Profile" />
+</menu>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/userPhoto"
+            android:layout_width="155dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/avatar1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="32dp"
+                android:text="Age"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/userAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="84dp"
+                android:text="24"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/userGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/userAge"
+                app:layout_constraintStart_toStartOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/userWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="65kg"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/userGender"
+                app:layout_constraintStart_toStartOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="116dp"
+                android:text="Gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+                app:layout_constraintStart_toEndOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="92dp"
+                android:text="Weight"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
+                app:layout_constraintStart_toEndOf="@+id/textView10" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Records:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="32dp"
+                android:text="Squat:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:text="Bench:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView22"
+                app:layout_constraintStart_toEndOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:text="Deadlift:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
+                app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:text="Military Press:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView24"
+                app:layout_constraintStart_toEndOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/squatPR"
+                android:layout_width="69dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="@+id/textView22"
+                app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/benchPR"
+                android:layout_width="69dp"
+                android:layout_height="44dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/squatPR"
+                app:layout_constraintStart_toStartOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/deadliftPR"
+                android:layout_width="69dp"
+                android:layout_height="44dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/benchPR"
+                app:layout_constraintStart_toStartOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/ohpPR"
+                android:layout_width="69dp"
+                android:layout_height="44dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintBaseline_toBaselineOf="@+id/deadliftPR"
+                app:layout_constraintStart_toStartOf="@+id/textView25" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medals:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="40dp"
+                android:text="Squat:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="Bench:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="@+id/textView36"
+                app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="Deadlift:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="@+id/textView37"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="Military Press:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <ImageView
+                android:id="@+id/squat1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="28dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toEndOf="@+id/textView36"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/squat1" />
+
+            <ImageView
+                android:id="@+id/sqaut2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toEndOf="@+id/squat1"
+                app:layout_constraintTop_toTopOf="@+id/squat1"
+                app:srcCompat="@drawable/squat2"
+                tools:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/squat3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toEndOf="@+id/sqaut2"
+                app:layout_constraintTop_toTopOf="@+id/sqaut2"
+                app:srcCompat="@drawable/squat3"
+                tools:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/squat5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toEndOf="@+id/squat4"
+                app:layout_constraintTop_toTopOf="@+id/squat4"
+                app:srcCompat="@drawable/squat4"
+                tools:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/squat4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toEndOf="@+id/squat3"
+                app:layout_constraintTop_toTopOf="@+id/squat3"
+                app:srcCompat="@drawable/squat5"
+                tools:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/bench1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="@+id/squat1"
+                app:layout_constraintTop_toBottomOf="@+id/squat1"
+                app:srcCompat="@drawable/bench1" />
+
+            <ImageView
+                android:id="@+id/bench2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toEndOf="@+id/bench1"
+                app:layout_constraintTop_toTopOf="@+id/bench1"
+                app:srcCompat="@drawable/bench2" />
+
+            <ImageView
+                android:id="@+id/bench3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/bench2"
+                app:layout_constraintTop_toTopOf="@+id/bench2"
+                app:srcCompat="@drawable/bench3" />
+
+            <ImageView
+                android:id="@+id/bench4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/bench3"
+                app:layout_constraintTop_toTopOf="@+id/bench3"
+                app:srcCompat="@drawable/bench4" />
+
+            <ImageView
+                android:id="@+id/bench5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="28dp"
+                app:layout_constraintStart_toEndOf="@+id/bench4"
+                app:layout_constraintTop_toTopOf="@+id/bench4"
+                app:srcCompat="@drawable/bench5" />
+
+            <ImageView
+                android:id="@+id/deadlift1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toEndOf="@+id/textView38"
+                app:layout_constraintTop_toBottomOf="@+id/bench1"
+                app:srcCompat="@drawable/deadlift1" />
+
+            <ImageView
+                android:id="@+id/deadlift2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/deadlift1"
+                app:layout_constraintTop_toTopOf="@+id/deadlift1"
+                app:srcCompat="@drawable/deadlift2" />
+
+            <ImageView
+                android:id="@+id/deadlift3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/deadlift2"
+                app:layout_constraintTop_toTopOf="@+id/deadlift2"
+                app:srcCompat="@drawable/deadlift3" />
+
+            <ImageView
+                android:id="@+id/deadlift4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toEndOf="@+id/deadlift3"
+                app:layout_constraintTop_toTopOf="@+id/deadlift3"
+                app:srcCompat="@drawable/deadlift4" />
+
+            <ImageView
+                android:id="@+id/ohp1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toEndOf="@+id/textView39"
+                app:layout_constraintTop_toBottomOf="@+id/deadlift1"
+                app:srcCompat="@drawable/ohp1" />
+
+            <ImageView
+                android:id="@+id/deadlift5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toEndOf="@+id/deadlift4"
+                app:layout_constraintTop_toTopOf="@+id/deadlift4"
+                app:srcCompat="@drawable/deadlift5" />
+
+            <ImageView
+                android:id="@+id/ohp2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toEndOf="@+id/ohp1"
+                app:layout_constraintTop_toTopOf="@+id/ohp1"
+                app:srcCompat="@drawable/ohp2" />
+
+            <ImageView
+                android:id="@+id/ohp3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintStart_toEndOf="@+id/ohp2"
+                app:layout_constraintTop_toTopOf="@+id/ohp2"
+                app:srcCompat="@drawable/ohp3" />
+
+            <ImageView
+                android:id="@+id/ohp4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintStart_toEndOf="@+id/ohp3"
+                app:layout_constraintTop_toTopOf="@+id/ohp3"
+                app:srcCompat="@drawable/ohp4" />
+
+            <ImageView
+                android:id="@+id/ohp5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toEndOf="@+id/ohp4"
+                app:layout_constraintTop_toTopOf="@+id/ohp4"
+                app:srcCompat="@drawable/ohp5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>
